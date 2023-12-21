@@ -40,6 +40,7 @@ function ProductForm() {
             placeholder="Enter image url here"
             onChange={(event) => {
               setUrl(event.target.value);
+              value = { imgUrl };
             }}
           />
         </label>
@@ -54,6 +55,7 @@ function ProductForm() {
             placeholder="Enter price here"
             onChange={(event) => {
               setPrice(event.target.value);
+              value = { price };
             }}
           />
         </label>
@@ -68,6 +70,7 @@ function ProductForm() {
             placeholder="Enter description here"
             onChange={(event) => {
               setDescription(event.target.value);
+              value = { description };
             }}
             rows={4}
             cols={30}
